@@ -1,4 +1,4 @@
-# Wipe Co. FFXIV
+# [Wipe Co. FFXIV <img src="public/favicon.png" alt="" align="right">](https://wipeco.kokke.eu)
 
 [![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fwipeco.kokke.eu)](https://wipeco.kokke.eu/)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/CostasAK/wipeco-ffxiv/main.yml?style=for-the-badge&logo=vite&logoColor=%23646CFF)](https://github.com/CostasAK/wipeco-ffxiv/actions/workflows/main.yml)
