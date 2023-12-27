@@ -23,6 +23,13 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-* {
-  @apply max-w-full;
+@layer base {
+  * {
+    @apply max-w-full;
+  }
+  *,
+  *::before,
+  *::after {
+    @apply box-content;
+  }
 }
