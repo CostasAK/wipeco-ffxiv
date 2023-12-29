@@ -11,6 +11,7 @@
     "clean": "pnpm --silent dlx rimraf dist node_modules",
     "sync": "pnpm prune && pnpm install",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint-fix": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "format": "prettier --ignore-unknown --check .",
     "format-write": "prettier --ignore-unknown --write .",
     "prepare": "husky install",
