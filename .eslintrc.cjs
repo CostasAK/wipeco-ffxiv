@@ -28,5 +28,6 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "import/named": "off", // throws an error when importing screen from testing-library
   },
 };

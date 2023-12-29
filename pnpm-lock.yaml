@@ -115,6 +115,9 @@ devDependencies:
   vite:
     specifier: ^5.0.10
     version: 5.0.10(@types/node@18.19.3)
+  vite-plugin-eslint:
+    specifier: ^1.8.1
+    version: 1.8.1(eslint@8.56.0)(vite@5.0.10)
   vite-plugin-image-optimizer:
     specifier: ^1.1.7
     version: 1.1.7(vite@5.0.10)
@@ -1158,6 +1161,17 @@ packages:
     engines: { node: ">=14.0.0" }
     dev: false
 
+  /@rollup/pluginutils@4.2.1:
+    resolution:
+      {
+        integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==,
+      }
+    engines: { node: ">= 8.0.0" }
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+    dev: true
+
   /@rollup/pluginutils@5.1.0:
     resolution:
       {
@@ -1587,6 +1601,16 @@ packages:
       }
     dependencies:
       "@babel/types": 7.23.6
+    dev: true
+
+  /@types/eslint@8.56.0:
+    resolution:
+      {
+        integrity: sha512-FlsN0p4FhuYRjIxpbdXovvHQhtlG05O1GG/RNWvdAxTboR438IOTwmrY/vLA+Xfgg06BTkP045M3vpFwTMv1dg==,
+      }
+    dependencies:
+      "@types/estree": 1.0.5
+      "@types/json-schema": 7.0.15
     dev: true
 
   /@types/estree@1.0.5:
@@ -6530,6 +6554,17 @@ packages:
     dependencies:
       glob: 7.2.3
 
+  /rollup@2.79.1:
+    resolution:
+      {
+        integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==,
+      }
+    engines: { node: ">=10.0.0" }
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
   /rollup@4.9.1:
     resolution:
       {
@@ -7504,6 +7539,22 @@ packages:
       - sugarss
       - supports-color
       - terser
+    dev: true
+
+  /vite-plugin-eslint@1.8.1(eslint@8.56.0)(vite@5.0.10):
+    resolution:
+      {
+        integrity: sha512-PqdMf3Y2fLO9FsNPmMX+//2BF5SF8nEWspZdgl4kSt7UvHDRHVVfHvxsD7ULYzZrJDGRxR81Nq7TOFgwMnUang==,
+      }
+    peerDependencies:
+      eslint: ">=7"
+      vite: ">=2"
+    dependencies:
+      "@rollup/pluginutils": 4.2.1
+      "@types/eslint": 8.56.0
+      eslint: 8.56.0
+      rollup: 2.79.1
+      vite: 5.0.10(@types/node@18.19.3)
     dev: true
 
   /vite-plugin-image-optimizer@1.1.7(vite@5.0.10):
