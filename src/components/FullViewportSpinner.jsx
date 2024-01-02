@@ -1,5 +1,5 @@
-import clsx from "clsx";
+import { cn } from "../utils/cn";
 
 export const FullViewportSpinner = () => {
-  return <img alt="Loading..." src="/favicon.png" className={clsx("m-10")} />;
+  return <img alt="Loading..." src="/favicon.png" className={cn("m-10")} />;
 };
