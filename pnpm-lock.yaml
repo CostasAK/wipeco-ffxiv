@@ -17,6 +17,9 @@ dependencies:
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
+  ical:
+    specifier: ^0.8.0
+    version: 0.8.0
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
@@ -4466,6 +4469,15 @@ packages:
     hasBin: true
     dev: true
 
+  /ical@0.8.0:
+    resolution:
+      {
+        integrity: sha512-/viUSb/RGLLnlgm0lWRlPBtVeQguQRErSPYl3ugnUaKUnzQswKqOG3M8/P1v1AB5NJwlHTuvTq1cs4mpeG2rCg==,
+      }
+    dependencies:
+      rrule: 2.4.1
+    dev: false
+
   /iconv-lite@0.4.24:
     resolution:
       {
@@ -5406,6 +5418,15 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /luxon@1.28.1:
+    resolution:
+      {
+        integrity: sha512-gYHAa180mKrNIUJCbwpmD0aTu9kV0dREDrwNnuyFAsO1Wt0EVYSZelPnJlbj9HplzXX/YWXHFTL45kvZ53M0pw==,
+      }
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /lz-string@1.5.0:
     resolution:
@@ -6655,6 +6676,15 @@ packages:
       "@rollup/rollup-win32-x64-msvc": 4.9.1
       fsevents: 2.3.3
     dev: true
+
+  /rrule@2.4.1:
+    resolution:
+      {
+        integrity: sha512-+NcvhETefswZq13T8nkuEnnQ6YgUeZaqMqVbp+ZiFDPCbp3AVgQIwUvNVDdMNrP05bKZG9ddDULFp0qZZYDrxg==,
+      }
+    optionalDependencies:
+      luxon: 1.28.1
+    dev: false
 
   /run-async@2.4.1:
     resolution:
