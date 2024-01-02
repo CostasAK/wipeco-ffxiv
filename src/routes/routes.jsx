@@ -1,4 +1,5 @@
 import ErrorPage from "./ErrorPage";
+import { Index } from "./Index";
 import Root from "./Root";
 
 export const routes = [
@@ -9,7 +10,7 @@ export const routes = [
     children: [
       {
         errorElement: <ErrorPage />,
-        children: [{ index: true, element: <>Under Construction...</> }],
+        children: [{ index: true, element: <Index /> }],
       },
     ],
   },
