@@ -9,6 +9,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:testing-library/react",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
     "prettier",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],

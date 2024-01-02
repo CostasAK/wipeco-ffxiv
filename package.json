@@ -23,6 +23,9 @@
     }
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.17.0",
+    "@tanstack/react-query-devtools": "^5.17.0",
+    "axios": "^1.6.3",
     "clsx": "^2.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -43,6 +46,7 @@
     "@iconify/react": "^4.1.1",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
+    "@tanstack/eslint-plugin-query": "^5.14.6",
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
