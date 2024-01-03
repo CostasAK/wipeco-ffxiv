@@ -38,13 +38,13 @@ export const Index = () => {
         (a, b) => new Date(a.start).getTime() - new Date(b.start).getTime(),
       )[0];
 
-  console.log(nextRaid);
-
   const nextRaidString = `${
-    nextRaid.summary
-  } is on the ${nextRaid.start.getDate()} of ${
-    months[nextRaid.start.getMonth()]
-  } at ${nextRaid.start.toLocaleTimeString("en-GB")}\n${nextRaid.description}`;
+    nextRaid?.summary
+  } is on the ${nextRaid?.start?.getDate()} of ${
+    months[nextRaid?.start?.getMonth()]
+  } at ${nextRaid?.start?.toLocaleTimeString("en-GB")}\n${
+    nextRaid?.description
+  }`;
 
   return ics?.isLoading ? (
     <>Under Construction...</>
